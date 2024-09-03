@@ -42,8 +42,8 @@ internal class Program
             Console.WriteLine("Do you want to made a new consult? S/N");
 
             var newSearchAnswer = Console.ReadLine();
-
-            while (!newSearchAnswer.ToLower().Equals("s") && !newSearchAnswer.ToLower().Equals("n"))
+            
+            while ( string.IsNullOrEmpty(newSearchAnswer) ||  !newSearchAnswer.ToLower().Equals("s") && !newSearchAnswer.ToLower().Equals("n"))
             {
                 Console.WriteLine("Do you want to made a new consult? S/N");
 
