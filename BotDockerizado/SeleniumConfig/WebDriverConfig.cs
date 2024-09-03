@@ -37,7 +37,6 @@ namespace SeleniumConfig
             options.AddArgument("--disable-gpu");
             options.AddArgument("--headless"); // Run Chrome in headless mode
             options.AddArgument("--no-sandbox"); // Required for Docker
-            options.AddArgument("--disable-dev-shm-usage"); // Overcome limited resource problems
             options.AddArgument("--disable-gpu"); // Applicable to Windows OS only
             options.AddArgument("--disable-software-rasterizer");
             options.AddArgument("--remote-debugging-port=9222"); // Required to run Chrome in Docker
@@ -49,7 +48,6 @@ namespace SeleniumConfig
             options.AddUserProfilePreference("profile.default_content_settings.popups", 0);
             options.AddUserProfilePreference("download.directory_upgrade", true);
             options.AddUserProfilePreference("safebrowsing.enabled", true);
-
 
             return options;
         }
