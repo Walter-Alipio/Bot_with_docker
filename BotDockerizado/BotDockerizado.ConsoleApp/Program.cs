@@ -9,6 +9,7 @@ internal class Program
 
         while (consult)
         {
+            Console.Clear();
             Console.WriteLine("What are you looking for?");
 
             var text = Console.ReadLine();
